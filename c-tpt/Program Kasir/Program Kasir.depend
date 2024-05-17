@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605076514 source:d:\college\codingan c\program kasir\main.c
+	<stdio.h>
+
+1605511198 source:d:\college\codingan c\string\string.c
+	<stdio.h>
+	<stdlib.h>
+

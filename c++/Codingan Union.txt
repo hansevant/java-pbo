@@ -1,0 +1,48 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+union Mahasiswa
+       {
+            char Buku[25];
+              int NPM, Tahun,d;
+              char Nama[25];
+              long Nomor;
+       };
+int main()
+{
+    First:
+
+    cout << "Daftar Peminjam Buku Perpustakaan Gunadarma";
+   Mahasiswa M;
+                    cout << "\n\nMasukan Nama Buku : ";
+                    cin >> M.Buku;
+                    cout << "Nama Buku : " << M.Buku;
+
+                    cout << "\n\nMasukan Tahun Buku : ";
+                    cin >> M.Tahun;
+                    cout << "Tahun Buku : " << M.Tahun;
+
+                    cout << "\n\nMasukan Nomor Buku : ";
+                    cin >> M.Nomor;
+                    cout << "Nomor Buku : " << M.Nomor;
+
+                    cout << "\n\nMasukan Nama Peminjam : ";
+                    cin >> M.Nama;
+                    cout << "Nama Peminjam : " << M.Nama;
+
+                    cout << "\n\nMasukan NPM : ";
+                    cin >> M.NPM;
+                    cout << "NPM : " << M.NPM;
+
+
+                    cout << "\n\nApakah program akan di ulang ? " << endl;
+                    cout << "Tekan 1 untuk kembali ke menu" << endl;
+                    cin >> M.d;
+                    system("cls");
+                    if (M.d = 1) goto First;
+
+
+
+    return 0;
+}
